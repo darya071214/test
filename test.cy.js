@@ -1,7 +1,6 @@
-import { google, search, goToLink, clickButton } from "./index.cy";
 
-describe("My first test", () => { 
-    it("Проверить ", () => { 
+describe("Test", () => { 
+    it("Проверка контактной информации на сайте ", () => { 
         cy.visit("https://google.com"); 
         
         cy.get("[title='Поиск']").type("Byndyusoft").type("{enter}"); 
@@ -16,6 +15,6 @@ describe("My first test", () => {
             if (cy.contains("sales@byndyusoft.com") && cy.get('[href="http://t.me/alexanderbyndyu"')){
                 alert ('Все верно')
             } 
-        })
+        });
     }); 
-  });
+});
