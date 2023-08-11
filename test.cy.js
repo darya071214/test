@@ -12,7 +12,7 @@ describe("Test", () => {
         })
 
         cy.origin('https://byndyusoft.com/', () => {
-            if (cy.contains("sales@byndyusoft.com") && cy.get('[href="http://t.me/alexanderbyndyu"')){
+            if (cy.contains("sales@byndyusoft.com") && cy.get('[href="http://t.me/alexanderbyndyu"]')){
                 alert ('Все верно')
             } 
         });
